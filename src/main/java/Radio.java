@@ -1,6 +1,6 @@
 public class Radio {
-    public int сurrentStationNumber;
-    public int currentVolume;
+    private int сurrentStationNumber;
+    private int currentVolume;
 
     public int getСurrentStationNumber() {
 
@@ -37,24 +37,29 @@ public class Radio {
         return currentVolume;
     }
 
-        public void increaseVolume() {
-            if (currentVolume < 100) {
-                currentVolume = currentVolume + 1;
-            } else {
-                currentVolume = 100;
-            }
+    public void setCurrentVolume(int newcurrentVolume) {
+        newcurrentVolume = currentVolume;
+    }
 
-        }
-        public void decreaseVolume() {
-            if (currentVolume > 0) {
-                currentVolume = currentVolume - 1;
-            } else {
-                currentVolume = 0;
-            }
-
-
+    public void increaseVolume() {
+        if (currentVolume < 100) {
+            currentVolume = currentVolume + 1;
+        } else {
+            currentVolume = 100;
         }
 
     }
+
+    public void decreaseVolume() {
+        if (currentVolume > 0) {
+            currentVolume = currentVolume - 1;
+        } else {
+            currentVolume = 0;
+        }
+
+
+    }
+
+}
 
 
