@@ -38,8 +38,9 @@ public class Radio {
     }
 
     public void setCurrentVolume(int newcurrentVolume) {
-        newcurrentVolume = currentVolume;
-    }
+        currentVolume = newcurrentVolume;
+
+    }пше 
 
     public void increaseVolume() {
         if (currentVolume < 100) {
