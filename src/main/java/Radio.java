@@ -40,7 +40,7 @@ public class Radio {
     public void setCurrentVolume(int newcurrentVolume) {
         currentVolume = newcurrentVolume;
 
-    }пше 
+    }
 
     public void increaseVolume() {
         if (currentVolume < 100) {
