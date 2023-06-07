@@ -42,7 +42,7 @@ class RadioTest {
         Assertions.assertEquals(expected, radio.getСurrentStationNumber());
     }
 
-    @Test/
+    @Test
     void shouldNextRadioStation() {
         Radio radio = new Radio();
         int station = 7;
